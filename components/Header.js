@@ -23,19 +23,16 @@ export default function Header() {
         >
             {/* Social Icons */}
             <SocialIcon 
-                url="https://twitter.com/tylenick" 
-                fgColor="gray" 
-                bgColor="transparent" 
-            />
-            <SocialIcon 
                 url="https://github.com/tylerlenick" 
                 fgColor="gray" 
-                bgColor="transparent" 
+                bgColor="transparent"
+                className="transition duration-500 hover:scale-125" 
             />
              <SocialIcon 
                 url="https://www.linkedin.com/in/tyler-lenick-069960ba/" 
                 fgColor="gray" 
-                bgColor="transparent" 
+                bgColor="transparent"
+                className="transition duration-500 hover:scale-125" 
             />
         </motion.div>
 
@@ -62,7 +59,7 @@ export default function Header() {
                 fgColor="gray" 
                 bgColor="transparent" 
             />
-            <p className="hidden md:inline-flex text-sm text-gray-400">Email Me</p>
+            <p className="transition duration-500 hidden md:inline-flex text-sm text-gray-800">Email Me</p>
         </motion.div>
     </header>
   )
