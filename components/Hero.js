@@ -30,8 +30,8 @@ export default function Hero() {
                 priority
                 src="/images/profile.jpg"
                 className="relative rounded-full mx-auto object-cover"
-                height={144}
-                width={144}
+                height={200}
+                width={200}
                 alt=""
             />
         </motion.div>

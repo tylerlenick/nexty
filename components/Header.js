@@ -55,7 +55,7 @@ export default function Header() {
             <SocialIcon
                 className="cursor-pointer"
                 network="email" 
-                //url="https://github.com/tylerlenick" 
+                url="mailto:tylerlenick@gmail.com" 
                 fgColor="gray" 
                 bgColor="transparent" 
             />
