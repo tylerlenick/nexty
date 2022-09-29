@@ -1,8 +1,9 @@
 import React from 'react'
 import XpCard from './XpCard'
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
-export default function Experience() {
+export default function Experience({props}) {
+  const posts = props;
   return (
     <motion.div 
         initial={{opacity: 0}}
@@ -14,10 +15,9 @@ export default function Experience() {
       </h1>
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
-        <XpCard />
-        <XpCard />
-        <XpCard />
-        <XpCard />
+      {posts.map(post =>
+          <XpCard key={post.id} props={post}/>
+      )}
       </div>
     </motion.div>
   )

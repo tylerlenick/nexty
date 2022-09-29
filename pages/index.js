@@ -6,8 +6,22 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Link from 'next/link';
 import Date from '../components/date';
+import fsPromises from 'fs/promises'
+import path from 'path'
 
-export default function Home() {
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'data.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+
+  return {
+    props: objectData
+  }
+}
+
+export default function Home(props) {
+  const posts = props.posts;
+  
   return (
     <div className="h-screen bg-white snap-y snap-mandatory overflow-scroll z-0">
       <Head>
@@ -19,21 +33,16 @@ export default function Home() {
         <Hero />
       </section>
 
-      {/* About */}
-      {/*<section id="about" className="snap-center">
-        <About />
-      </section>*/}
-
       <section id="about" className="snap-center">
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
-        <Experience />
-      </section>
-
       <section id="skills" className="snap-start">
         <Skills />
+      </section>
+
+      <section id="experience" className="snap-center">
+        <Experience props={posts}/>
       </section>
 
       {/* Projects */}

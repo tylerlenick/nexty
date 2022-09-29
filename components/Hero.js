@@ -45,7 +45,7 @@ export default function Hero() {
                 <button className="px-5 uppercase font-semibold tracking-[10px]">Skills</button>
             </Link>
             <Link href="#projects">
-                <button className="px-5 uppercase font-semibold tracking-[10px]">Projects</button>
+                <button className="px-5 uppercase font-semibold tracking-[10px]">Experience</button>
             </Link>
         </div>
     </div>
