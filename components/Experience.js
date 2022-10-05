@@ -14,7 +14,7 @@ export default function Experience({props}) {
           Experience
       </h1>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-gray-400/20 ">
       {posts.map(post =>
           <XpCard key={post.id} props={post}/>
       )}

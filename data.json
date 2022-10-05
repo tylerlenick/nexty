@@ -3,7 +3,7 @@
         {
             "id": 1,
             "company": "Brandmovers Inc.",
-            "title": "Full Stack Developer",
+            "title": "Full Stack Engineer",
             "logo": "/images/brandmovers.jpg",
             "dates": "December 2019 - Present",
             "skillIcons": [
@@ -14,7 +14,7 @@
         {
             "id": 2,
             "company": "Mather Economics",
-            "title": "Software Developer",
+            "title": "Software Engineer",
             "logo": "/images/mather.png",
             "dates": "January 2019 - December 2019",
             "skillIcons": [
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "company": "DXC Technology / HPE",
-            "title": "Software Developer",
+            "title": "Software Engineer",
             "logo": "/images/dxc.png",
             "dates": "May 2018 - December 2018",
             "skillIcons": [

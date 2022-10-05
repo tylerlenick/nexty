@@ -23,7 +23,7 @@ export default function Home(props) {
   const posts = props.posts;
   
   return (
-    <div className="h-screen bg-white snap-y snap-mandatory overflow-scroll z-0">
+    <div className="h-screen bg-white snap-y snap-mandatory overflow-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-slate-900">
       <Head>
         <title>Tyler Dev</title>
       </Head>
@@ -31,10 +31,6 @@ export default function Home(props) {
       <Header />
       <section id="hero" className="snap-start">
         <Hero />
-      </section>
-
-      <section id="about" className="snap-center">
-        <About />
       </section>
 
       <section id="skills" className="snap-start">

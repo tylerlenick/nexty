@@ -36,18 +36,23 @@ export default function Hero() {
             />
         </motion.div>
         <h1 className="py-5 text-2xl font-semibold scroll-px-10 tracking-[5px]"><Typical steps={["Hi, I'm Tyler", 1000, "Full Stack Developer", 5000]}/></h1>
-
-        <div className="pt-5">
-            <Link href="#about">
-                <button className="px-5 uppercase font-semibold tracking-[10px]">About</button>
-            </Link>
-            <Link href="#skills">
-                <button className="px-5 uppercase font-semibold tracking-[10px]">Skills</button>
-            </Link>
-            <Link href="#projects">
-                <button className="px-5 uppercase font-semibold tracking-[10px]">Experience</button>
-            </Link>
-        </div>
+        <motion.div
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+      >
+        <p className="text-1xl md:text-2xl px-5 font-semibold md:px-20">
+          Hi I'm Tyler, a Full Stack Developer from Atlanta, GA. 
+          I'm always learning and applying what I learn to craft great application experiences. 
+          When I'm not writing code, I'm usually trying to improve my home chef skills or exploring new places on the weekends.  
+        </p>
+      </motion.div>
+        
     </div>
   )
 }

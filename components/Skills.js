@@ -12,9 +12,27 @@ export default function Skills() {
       <h1 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
           Technology
       </h1>
+    
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4">
+        <Skill img="/images/react.png"/>
+        <Skill directionLeft={true} img="/images/vue.png" />
+        <Skill />
+        <Skill directionLeft={true} img="/images/vue.png" />
+        <Skill />
+        <Skill directionLeft={true} img="/images/vue.png" />
+        <Skill />
+        <Skill directionLeft={true} img="/images/vue.png" />
       </div>
+
+     
     </motion.div>
   )
 }
+//vue
+//laravel
+//react
+//node
+//javascript
+//next
+//tailwind
