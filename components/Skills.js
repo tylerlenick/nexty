@@ -9,8 +9,8 @@ export default function Skills() {
       whileInView={{opacity: 1}}
       transition={{duration: 1.5}}
       className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
-      <h1 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-          Technology
+      <h1 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl leading-10">
+          Technology I'm Using
       </h1>
 
       <div className="grid grid-cols-4">
@@ -24,15 +24,5 @@ export default function Skills() {
         <Skill directionLeft={true} img="/images/mysql.png" />
       </div>
     </motion.div>
-    
-
-
   )
 }
-//vue
-//laravel
-//react
-//node
-//javascript
-//next
-//tailwind
