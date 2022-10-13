@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Skill({ directionLeft, img }) {
   return (
-    <div className="group relative flex cursor-points">
+    <div className="group relative flex cursor-points transition duration-500 hover:scale-125 md:m-2">
       <motion.img 
         initial={{
           y: directionLeft ? -200 : 200,

@@ -46,9 +46,9 @@ export default function Hero() {
           opacity: 1,
         }}
       >
-        <p className="text-1xl md:text-2xl px-5 font-semibold md:px-20 md:mx-20">
-          Hi I'm Tyler, a Full Stack Developer from Atlanta, GA. 
-          I'm always learning and applying what I learn to craft great application experiences. 
+        <p className="text-1xl md:text-2xl px-5 font-semibold md:px-auto md:mx-auto">
+          Hi I'm <span className="text-red-700">Tyler</span>, a Full Stack Developer from Atlanta, GA. 
+          I'm always learning and applying those skills to craft great application experiences. 
           When I'm not writing code, I'm usually trying to improve my home chef skills or exploring new places on the weekends.  
         </p>
       </motion.div>
