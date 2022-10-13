@@ -10,7 +10,7 @@ export default function XpCard({props}) {
             transition={{duration: 1.2}}
             whileInView={{opacity: 1, y: 0}}
             viewport={{ once: true }}
-            className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center" 
+            className="w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center" 
             src={props.logo}
         />
 
@@ -21,7 +21,7 @@ export default function XpCard({props}) {
                 <br/>
                 {props.skillIcons.map(skill =>
                     <img
-                        className="h-10 w-10 rounded-full"
+                        className="h-10 w-10"
                         src={skill}
                        
                         alt=""
