@@ -1,5 +1,5 @@
 {
-    "posts": [
+    "jobs": [
         {
             "id": 1,
             "company": "Brandmovers Inc.",
@@ -49,6 +49,67 @@
             "skillIcons": [
                 "/images/mysql.png"
             ]
+        }
+    ],
+
+    "skills": [
+        {
+            "id": 1,
+            "name": "JavaScript",
+            "icon": "/images/javascript.png",
+            "url": "https://www.javascript.com/",
+            "directionLeft": false
+        },
+        {
+            "id": 2,
+            "name": "Vue",
+            "icon": "/images/vue.png",
+            "url": "https://vuejs.org/",
+            "directionLeft": true
+        },
+        {
+            "id": 3,
+            "name": "React",
+            "icon": "/images/react.png",
+            "url": "https://reactjs.org/",
+            "directionLeft": false
+        },
+        {
+            "id": 4,
+            "name": "Next",
+            "icon": "/images/next.png",
+            "url": "https://nextjs.org/",
+            "directionLeft": true
+        },
+        {
+            "id": 5,
+            "name": "Laravel",
+            "icon": "/images/laravel.png",
+            "url": "https://laravel.com/",
+            "directionLeft": false
+        },
+        {
+            "id": 6,
+            "name": "PHP",
+            "icon": "/images/php.png",
+            "url": "https://www.php.net/",
+            "directionLeft": true
+        },
+        {
+            "id": 7,
+            "name": "Node",
+            "icon": "/images/node.png",
+            "url": "https://nodejs.org/en/",
+            "directionLeft": false
+        },
+        
+        
+        {
+            "id": 8,
+            "name": "MySQL",
+            "icon": "/images/mysql.png",
+            "url": "https://www.mysql.com/",
+            "directionLeft": true
         }
     ]
 }

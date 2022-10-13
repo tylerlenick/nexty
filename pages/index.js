@@ -20,7 +20,8 @@ export async function getStaticProps() {
 }
 
 export default function Home(props) {
-  const posts = props.posts;
+  const jobs = props.jobs;
+  const skills = props.skills;
   
   return (
     <div className="h-screen bg-white snap-y snap-mandatory overflow-scroll z-0 scrollbar-track-gray-400/20 scrollbar-thumb-slate-900">
@@ -34,11 +35,11 @@ export default function Home(props) {
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills props={skills}/>
       </section>
 
       <section id="experience" className="snap-center">
-        <Experience props={posts}/>
+        <Experience props={jobs}/>
       </section>
 
       {/* Projects */}

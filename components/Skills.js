@@ -2,7 +2,8 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Skill from './Skill'
 
-export default function Skills() {
+export default function Skills({props}) {
+  const skills = props;
   return (
     <motion.div 
       initial={{opacity: 0}}
@@ -14,14 +15,9 @@ export default function Skills() {
       </h1>
 
       <div className="grid grid-cols-4">
-        <Skill img="/images/javascript.png"/>
-        <Skill directionLeft={true} img="/images/vue.png" />
-        <Skill img="/images/react.png"/>
-        <Skill directionLeft={true} img="/images/next.png" />
-        <Skill img="/images/laravel.png"/>
-        <Skill directionLeft={true} img="/images/php.png" />
-        <Skill img="/images/node.png"/>
-        <Skill directionLeft={true} img="/images/mysql.png" />
+        {skills.map(skill =>
+            <Skill key={skill.id} props={skill}/>
+        )}
       </div>
     </motion.div>
   )
